@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="355e601d580f4ef0a5fcffef9fbb3a45" Name="Diagram1" ZoomLevel="56">
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Catagory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Customer" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Customer_Transaction" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Distributor" Width="1.5" PointX="3.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Distributor_Material" Width="1.5" PointX="6" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Distributor_Transaction" Width="1.5" PointX="6" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Employee_Details" Width="1.5" PointX="13.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Employee_salary" Width="1.5" PointX="16" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Employee_Transaction" Width="1.5" PointX="18.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Maintainance" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Group" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Info" Width="1.5" PointX="11" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Product" Width="1.5" PointX="13.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Stock" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Stock_Order" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Stock_Order_Items" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.User" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Colour" Width="1.5" PointX="11" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Size" Width="1.5" PointX="11" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Track" Width="1.5" PointX="11" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Material_Type" Width="1.5" PointX="11" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Ordered_Items" Width="1.5" PointX="5.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="The_Windows_And_Door_Crew_DBModel.Product_Material" Width="1.5" PointX="16" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Order__Customer___2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Customer___Order__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Customer___User___2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Distribut__Distr__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Distribut__Distr__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Distribut__Order__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Distribut__User___534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Employee___Emplo__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Employee___Emplo__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Material___Group__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Material___Group__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Material___Group__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Material___Group__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Material___Group__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Order__User_Id__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Ordered_I__Order__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Product_M__Produ__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Stock_Ord__Order__14270015" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Stock_Ord__Order__151B244E" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Stock_Ord__Order__160F4887" />
+        <AssociationConnector Association="The_Windows_And_Door_Crew_DBModel.FK__Stock_Ord__Order__18EBB532" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

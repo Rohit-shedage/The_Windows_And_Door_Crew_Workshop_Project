@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="The_Windows_And_Door_Crew_DBModelStoreContainer" CdmEntityContainer="The_Windows_And_Door_Crew_DBEntities">
+    <EntitySetMapping Name="Catagories">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Catagory">
+        <MappingFragment StoreEntitySet="Catagory">
+          <ScalarProperty Name="Catagory_Id" ColumnName="Catagory_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Customer_Id" ColumnName="Customer_Id" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer_Transaction">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Customer_Transaction">
+        <MappingFragment StoreEntitySet="Customer_Transaction">
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distributors">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Distributor">
+        <MappingFragment StoreEntitySet="Distributor">
+          <ScalarProperty Name="Distributor_Id" ColumnName="Distributor_Id" />
+          <ScalarProperty Name="Added_Date" ColumnName="Added_Date" />
+          <ScalarProperty Name="Distributor_Name" ColumnName="Distributor_Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distributor_Material">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Distributor_Material">
+        <MappingFragment StoreEntitySet="Distributor_Material">
+          <ScalarProperty Name="DM_Id" ColumnName="DM_Id" />
+          <ScalarProperty Name="Distributor_Id" ColumnName="Distributor_Id" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distributor_Transaction">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Distributor_Transaction">
+        <MappingFragment StoreEntitySet="Distributor_Transaction">
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+          <ScalarProperty Name="Distributor_Id" ColumnName="Distributor_Id" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_Details">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Employee_Details">
+        <MappingFragment StoreEntitySet="Employee_Details">
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Mobile_No" ColumnName="Mobile_No" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Adhaar_No" ColumnName="Adhaar_No" />
+          <ScalarProperty Name="Account_No" ColumnName="Account_No" />
+          <ScalarProperty Name="Qualification" ColumnName="Qualification" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Joining_Date" ColumnName="Joining_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_salary">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Employee_salary">
+        <MappingFragment StoreEntitySet="Employee_salary">
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Pending_Salary" ColumnName="Pending_Salary" />
+          <ScalarProperty Name="Last_Paid" ColumnName="Last_Paid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_Transaction">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Employee_Transaction">
+        <MappingFragment StoreEntitySet="Employee_Transaction">
+          <ScalarProperty Name="Transaction_Id" ColumnName="Transaction_Id" />
+          <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Maintainances">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Maintainance">
+        <MappingFragment StoreEntitySet="Maintainance">
+          <ScalarProperty Name="Maintainance_Id" ColumnName="Maintainance_Id" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Group">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Group">
+        <MappingFragment StoreEntitySet="Material_Group">
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+          <ScalarProperty Name="Group_Name" ColumnName="Group_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Info">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Info">
+        <MappingFragment StoreEntitySet="Material_Info">
+          <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Customer_Id" ColumnName="Customer_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Order_Date" ColumnName="Order_Date" />
+          <ScalarProperty Name="Installation_Charge" ColumnName="Installation_Charge" />
+          <ScalarProperty Name="GST" ColumnName="GST" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Paid_Amount" ColumnName="Paid_Amount" />
+          <ScalarProperty Name="Remaining_Amount" ColumnName="Remaining_Amount" />
+          <ScalarProperty Name="Delivery_Date" ColumnName="Delivery_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Available_In_Track" ColumnName="Available_In_Track" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Catagory" ColumnName="Catagory" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Time_To_Build" ColumnName="Time_To_Build" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stocks">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="Material_Id" ColumnName="Material_Id" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Colour" ColumnName="Colour" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Track" ColumnName="Track" />
+          <ScalarProperty Name="Available_Stock" ColumnName="Available_Stock" />
+          <ScalarProperty Name="Purchase_Price" ColumnName="Purchase_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock_Order">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Stock_Order">
+        <MappingFragment StoreEntitySet="Stock_Order">
+          <ScalarProperty Name="Remaining_Amount" ColumnName="Remaining_Amount" />
+          <ScalarProperty Name="Order_Stock_Id" ColumnName="Order_Stock_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Distributor_Name" ColumnName="Distributor_Name" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Paid_Amount" ColumnName="Paid_Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock_Order_Items">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Stock_Order_Items">
+        <MappingFragment StoreEntitySet="Stock_Order_Items">
+          <ScalarProperty Name="Order_Stock_Id" ColumnName="Order_Stock_Id" />
+          <ScalarProperty Name="Stock_Order_Items_Id" ColumnName="Stock_Order_Items_Id" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Colour" ColumnName="Colour" />
+          <ScalarProperty Name="Track" ColumnName="Track" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Purchase_Price" ColumnName="Purchase_Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Created_Date" ColumnName="Created_Date" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Security_Key" ColumnName="Security_Key" />
+          <ScalarProperty Name="Treat_AS" ColumnName="Treat_AS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Colour">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Colour">
+        <MappingFragment StoreEntitySet="Material_Colour">
+          <ScalarProperty Name="Material_Colour1" ColumnName="Material_Colour" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Size">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Size">
+        <MappingFragment StoreEntitySet="Material_Size">
+          <ScalarProperty Name="Material_Size1" ColumnName="Material_Size" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Track">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Track">
+        <MappingFragment StoreEntitySet="Material_Track">
+          <ScalarProperty Name="Track" ColumnName="Track" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material_Type">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Material_Type">
+        <MappingFragment StoreEntitySet="Material_Type">
+          <ScalarProperty Name="Material_Type1" ColumnName="Material_Type" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ordered_Items">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Ordered_Items">
+        <MappingFragment StoreEntitySet="Ordered_Items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Order_Id" ColumnName="Order_Id" />
+          <ScalarProperty Name="Catagory" ColumnName="Catagory" />
+          <ScalarProperty Name="Sub_Catagory" ColumnName="Sub_Catagory" />
+          <ScalarProperty Name="Material_Type" ColumnName="Material_Type" />
+          <ScalarProperty Name="Colour" ColumnName="Colour" />
+          <ScalarProperty Name="Glass_Type" ColumnName="Glass_Type" />
+          <ScalarProperty Name="Track" ColumnName="Track" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Material">
+      <EntityTypeMapping TypeName="The_Windows_And_Door_Crew_DBModel.Product_Material">
+        <MappingFragment StoreEntitySet="Product_Material">
+          <ScalarProperty Name="PM_ID" ColumnName="PM_ID" />
+          <ScalarProperty Name="Product_Id" ColumnName="Product_Id" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

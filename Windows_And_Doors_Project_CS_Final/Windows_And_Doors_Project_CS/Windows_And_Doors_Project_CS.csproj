@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1809BE9E-AB78-429E-BB55-39A6BA0B5AFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Windows_And_Doors_Project_CS</RootNamespace>
+    <AssemblyName>Windows_And_Doors_Project_CS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catagory.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Transaction.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\Stock_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stock_DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Distributor.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Distributor_Material.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Distributor_Transaction.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Details.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_salary.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_Transaction.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Accept_New_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Accept_New_Order.Designer.cs">
+      <DependentUpon>frm_Accept_New_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Customer_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Customer_Details.Designer.cs">
+      <DependentUpon>frm_Add_Customer_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Material.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Material.Designer.cs">
+      <DependentUpon>frm_Add_Material.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Distributor.Designer.cs">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_Employee.Designer.cs">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_New_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_New_User.Designer.cs">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Product.Designer.cs">
+      <DependentUpon>frm_Add_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Stock.Designer.cs">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Doors_Images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Doors_Images.Designer.cs">
+      <DependentUpon>frm_Doors_Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Edit_Prices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Edit_Prices.Designer.cs">
+      <DependentUpon>frm_Edit_Prices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Final_Amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Final_Amount.Designer.cs">
+      <DependentUpon>frm_Final_Amount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Glass_Images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Glass_Images.Designer.cs">
+      <DependentUpon>frm_Glass_Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Lobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Lobby.Designer.cs">
+      <DependentUpon>frm_Lobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Customer.Designer.cs">
+      <DependentUpon>frm_Manage_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Distributor.Designer.cs">
+      <DependentUpon>frm_Manage_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Employee.Designer.cs">
+      <DependentUpon>frm_Manage_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Order.Designer.cs">
+      <DependentUpon>frm_Manage_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Product.Designer.cs">
+      <DependentUpon>frm_Manage_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_User.Designer.cs">
+      <DependentUpon>frm_Manage_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MDI_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MDI_Main_Form.Designer.cs">
+      <DependentUpon>frm_MDI_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Manage_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Manage_Stock.Designer.cs">
+      <DependentUpon>frm_Manage_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Pay_Maintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Pay_Maintenance.Designer.cs">
+      <DependentUpon>frm_Pay_Maintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Salary.Designer.cs">
+      <DependentUpon>frm_Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Total_Earning_And_Expenditure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Total_Earning_And_Expenditure.Designer.cs">
+      <DependentUpon>frm_Total_Earning_And_Expenditure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Windows_Images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Windows_Images.Designer.cs">
+      <DependentUpon>frm_Windows_Images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Code_Class.cs" />
+    <Compile Include="Maintainance.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Colour.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Group.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Info.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Size.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Track.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Material_Type.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ordered_Items.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Material.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report_Forms\frm_Montly_Stocks_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frm_Montly_Stocks_Report.Designer.cs">
+      <DependentUpon>frm_Montly_Stocks_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Stock.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Order.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Order_Items.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_Accept_New_Order.resx">
+      <DependentUpon>frm_Accept_New_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Customer_Details.resx">
+      <DependentUpon>frm_Add_Customer_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Material.resx">
+      <DependentUpon>frm_Add_Material.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Distributor.resx">
+      <DependentUpon>frm_Add_New_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_Employee.resx">
+      <DependentUpon>frm_Add_New_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_New_User.resx">
+      <DependentUpon>frm_Add_New_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Product.resx">
+      <DependentUpon>frm_Add_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Stock.resx">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Doors_Images.resx">
+      <DependentUpon>frm_Doors_Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Edit_Prices.resx">
+      <DependentUpon>frm_Edit_Prices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Final_Amount.resx">
+      <DependentUpon>frm_Final_Amount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Glass_Images.resx">
+      <DependentUpon>frm_Glass_Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Lobby.resx">
+      <DependentUpon>frm_Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Customer.resx">
+      <DependentUpon>frm_Manage_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Distributor.resx">
+      <DependentUpon>frm_Manage_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Employee.resx">
+      <DependentUpon>frm_Manage_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Order.resx">
+      <DependentUpon>frm_Manage_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Product.resx">
+      <DependentUpon>frm_Manage_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_User.resx">
+      <DependentUpon>frm_Manage_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MDI_Main_Form.resx">
+      <DependentUpon>frm_MDI_Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Manage_Stock.resx">
+      <DependentUpon>frm_Manage_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Pay_Maintenance.resx">
+      <DependentUpon>frm_Pay_Maintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Salary.resx">
+      <DependentUpon>frm_Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Total_Earning_And_Expenditure.resx">
+      <DependentUpon>frm_Total_Earning_And_Expenditure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Windows_Images.resx">
+      <DependentUpon>frm_Windows_Images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report_Forms\frm_Montly_Stocks_Report.resx">
+      <DependentUpon>frm_Montly_Stocks_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_RDLC\Montly_Stock.rdlc" />
+    <EntityDeploy Include="EntityModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataSets\Stock_DS.xsc">
+      <DependentUpon>Stock_DS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Stock_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Stock_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\Stock_DS.xss">
+      <DependentUpon>Stock_DS.xsd</DependentUpon>
+    </None>
+    <None Include="EntityModel.edmx.diagram">
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EntityModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityModel.Context.cs</LastGenOutput>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="EntityModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityModel.edmx</DependentUpon>
+      <LastGenOutput>EntityModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
