@@ -83,6 +83,11 @@
     <Compile Include="Customer_Transaction.cs">
       <DependentUpon>EntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\Category_Wise_Product_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Category_Wise_Product_DS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\Stock_DS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -313,6 +318,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report_Forms\frm_Category_Wise_Product_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frm_Category_Wise_Product_Report.Designer.cs">
+      <DependentUpon>frm_Category_Wise_Product_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report_Forms\frm_Montly_Stocks_Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -420,14 +431,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report_Forms\frm_Category_Wise_Product_Report.resx">
+      <DependentUpon>frm_Category_Wise_Product_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report_Forms\frm_Montly_Stocks_Report.resx">
       <DependentUpon>frm_Montly_Stocks_Report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report_RDLC\Category_Wise_Product_RDLC.rdlc" />
     <EmbeddedResource Include="Report_RDLC\Montly_Stock.rdlc" />
     <EntityDeploy Include="EntityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EntityModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DataSets\Category_Wise_Product_DS.xsc">
+      <DependentUpon>Category_Wise_Product_DS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Category_Wise_Product_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Category_Wise_Product_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\Category_Wise_Product_DS.xss">
+      <DependentUpon>Category_Wise_Product_DS.xsd</DependentUpon>
+    </None>
     <None Include="DataSets\Stock_DS.xsc">
       <DependentUpon>Stock_DS.xsd</DependentUpon>
     </None>

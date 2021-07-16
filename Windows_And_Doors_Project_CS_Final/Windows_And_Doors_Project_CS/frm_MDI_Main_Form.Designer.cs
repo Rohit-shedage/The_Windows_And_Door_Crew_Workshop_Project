@@ -73,7 +73,7 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnl_Menu_List = new System.Windows.Forms.Panel();
             this.pnl_Sub_Report = new System.Windows.Forms.Panel();
-            this.btn_Distributor_Report = new System.Windows.Forms.Button();
+            this.btn_Monthly_Stock_Report = new System.Windows.Forms.Button();
             this.btn_Customer_Bill = new System.Windows.Forms.Button();
             this.btn_Report = new System.Windows.Forms.Button();
             this.btn_Total_Earning_Expenditure = new System.Windows.Forms.Button();
@@ -112,6 +112,7 @@
             this.btn_Accept_Order = new System.Windows.Forms.Button();
             this.btn_Order = new System.Windows.Forms.Button();
             this.pnl_Logo = new System.Windows.Forms.Panel();
+            this.btn_Category_Wise_Product_Report = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.pnl_Menu_List.SuspendLayout();
@@ -509,29 +510,31 @@
             // pnl_Sub_Report
             // 
             this.pnl_Sub_Report.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.pnl_Sub_Report.Controls.Add(this.btn_Distributor_Report);
+            this.pnl_Sub_Report.Controls.Add(this.btn_Category_Wise_Product_Report);
+            this.pnl_Sub_Report.Controls.Add(this.btn_Monthly_Stock_Report);
             this.pnl_Sub_Report.Controls.Add(this.btn_Customer_Bill);
             this.pnl_Sub_Report.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Sub_Report.Location = new System.Drawing.Point(0, 1635);
             this.pnl_Sub_Report.Name = "pnl_Sub_Report";
-            this.pnl_Sub_Report.Size = new System.Drawing.Size(279, 100);
+            this.pnl_Sub_Report.Size = new System.Drawing.Size(279, 168);
             this.pnl_Sub_Report.TabIndex = 24;
             this.pnl_Sub_Report.Visible = false;
             // 
-            // btn_Distributor_Report
+            // btn_Monthly_Stock_Report
             // 
-            this.btn_Distributor_Report.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Distributor_Report.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Distributor_Report.FlatAppearance.BorderSize = 0;
-            this.btn_Distributor_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Distributor_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Distributor_Report.ForeColor = System.Drawing.Color.Black;
-            this.btn_Distributor_Report.Location = new System.Drawing.Point(0, 45);
-            this.btn_Distributor_Report.Name = "btn_Distributor_Report";
-            this.btn_Distributor_Report.Size = new System.Drawing.Size(279, 45);
-            this.btn_Distributor_Report.TabIndex = 8;
-            this.btn_Distributor_Report.Text = "Distributor Report";
-            this.btn_Distributor_Report.UseVisualStyleBackColor = false;
+            this.btn_Monthly_Stock_Report.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Monthly_Stock_Report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Monthly_Stock_Report.FlatAppearance.BorderSize = 0;
+            this.btn_Monthly_Stock_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Monthly_Stock_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Monthly_Stock_Report.ForeColor = System.Drawing.Color.Black;
+            this.btn_Monthly_Stock_Report.Location = new System.Drawing.Point(0, 45);
+            this.btn_Monthly_Stock_Report.Name = "btn_Monthly_Stock_Report";
+            this.btn_Monthly_Stock_Report.Size = new System.Drawing.Size(279, 45);
+            this.btn_Monthly_Stock_Report.TabIndex = 8;
+            this.btn_Monthly_Stock_Report.Text = "Monthly Stock Report";
+            this.btn_Monthly_Stock_Report.UseVisualStyleBackColor = false;
+            this.btn_Monthly_Stock_Report.Click += new System.EventHandler(this.btn_Monthly_Stock_Report_Click);
             // 
             // btn_Customer_Bill
             // 
@@ -1101,6 +1104,22 @@
             this.pnl_Logo.Size = new System.Drawing.Size(279, 138);
             this.pnl_Logo.TabIndex = 5;
             // 
+            // btn_Category_Wise_Product_Report
+            // 
+            this.btn_Category_Wise_Product_Report.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Category_Wise_Product_Report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Category_Wise_Product_Report.FlatAppearance.BorderSize = 0;
+            this.btn_Category_Wise_Product_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Category_Wise_Product_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Category_Wise_Product_Report.ForeColor = System.Drawing.Color.Black;
+            this.btn_Category_Wise_Product_Report.Location = new System.Drawing.Point(0, 90);
+            this.btn_Category_Wise_Product_Report.Name = "btn_Category_Wise_Product_Report";
+            this.btn_Category_Wise_Product_Report.Size = new System.Drawing.Size(279, 66);
+            this.btn_Category_Wise_Product_Report.TabIndex = 9;
+            this.btn_Category_Wise_Product_Report.Text = "Category Wise Product Report";
+            this.btn_Category_Wise_Product_Report.UseVisualStyleBackColor = false;
+            this.btn_Category_Wise_Product_Report.Click += new System.EventHandler(this.btn_Category_Wise_Product_Report_Click);
+            // 
             // frm_MDI_Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1209,7 +1228,7 @@
         private System.Windows.Forms.Button btn_Add_New_Distributor;
         private System.Windows.Forms.Button btn_Distributor;
         private System.Windows.Forms.Panel pnl_Sub_Report;
-        private System.Windows.Forms.Button btn_Distributor_Report;
+        private System.Windows.Forms.Button btn_Monthly_Stock_Report;
         private System.Windows.Forms.Button btn_Customer_Bill;
         private System.Windows.Forms.Button btn_Report;
         private System.Windows.Forms.Button btn_Total_Earning_Expenditure;
@@ -1221,6 +1240,7 @@
         private System.Windows.Forms.Button btn_Manage_Customer;
         private System.Windows.Forms.Button btn_Add_New_Customer;
         private System.Windows.Forms.Button btn_Customer;
+        private System.Windows.Forms.Button btn_Category_Wise_Product_Report;
     }
 }
 

@@ -351,5 +351,17 @@ namespace Windows_And_Doors_Project_CS
             Show_Mdi_Parent(new frm_Manage_User());
             Hide_Opened_Sub_Panel();
         }
+
+        private void btn_Monthly_Stock_Report_Click(object sender, EventArgs e)
+        {
+            Show_Mdi_Parent(new Report_Forms.frm_Montly_Stocks_Report());
+            Hide_Opened_Sub_Panel();
+        }
+
+        private void btn_Category_Wise_Product_Report_Click(object sender, EventArgs e)
+        {
+            Show_Mdi_Parent(new Report_Forms.frm_Category_Wise_Product_Report());
+            Hide_Opened_Sub_Panel();
+        }
     }
 }

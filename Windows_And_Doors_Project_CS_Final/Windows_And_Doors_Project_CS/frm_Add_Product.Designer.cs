@@ -517,7 +517,7 @@
             this.cmb_Catagory.Items.AddRange(new object[] {
             "Window",
             "Door"});
-            this.cmb_Catagory.Location = new System.Drawing.Point(694, 3);
+            this.cmb_Catagory.Location = new System.Drawing.Point(694, 4);
             this.cmb_Catagory.Name = "cmb_Catagory";
             this.cmb_Catagory.Size = new System.Drawing.Size(185, 39);
             this.cmb_Catagory.TabIndex = 31;
