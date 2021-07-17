@@ -363,5 +363,11 @@ namespace Windows_And_Doors_Project_CS
             Show_Mdi_Parent(new Report_Forms.frm_Category_Wise_Product_Report());
             Hide_Opened_Sub_Panel();
         }
+
+        private void btn_Date_Wise_Orders_Report_Click(object sender, EventArgs e)
+        {
+            Show_Mdi_Parent(new Report_Forms.frm_Date_Wise_Orders());
+            Hide_Opened_Sub_Panel();
+        }
     }
 }

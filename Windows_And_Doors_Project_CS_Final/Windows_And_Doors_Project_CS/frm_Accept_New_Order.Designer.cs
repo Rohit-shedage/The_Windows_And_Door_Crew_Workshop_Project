@@ -691,7 +691,7 @@
             this.cmb_Track.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cmb_Track.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_Track.FormattingEnabled = true;
-            this.cmb_Track.Location = new System.Drawing.Point(22, 119);
+            this.cmb_Track.Location = new System.Drawing.Point(22, 118);
             this.cmb_Track.Name = "cmb_Track";
             this.cmb_Track.Size = new System.Drawing.Size(176, 39);
             this.cmb_Track.TabIndex = 26;

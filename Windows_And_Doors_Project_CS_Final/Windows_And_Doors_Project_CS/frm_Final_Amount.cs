@@ -178,5 +178,13 @@ namespace Windows_And_Doors_Project_CS
                 DB.SaveChanges();
             }
         }
+
+        private void tb_GST_TextChanged(object sender, EventArgs e)
+        {
+            //if (tb_GST.Text != "")
+            //{
+            //    double gst = ((Convert.ToInt32(Total1) + Convert.ToInt32(Total1) * 12 / 100 + 1000));
+            //}
+        }
     }
 }

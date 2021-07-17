@@ -88,6 +88,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Category_Wise_Product_DS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\Date_Wise_Orders_DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Date_Wise_Orders_DS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\Stock_DS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -324,6 +329,12 @@
     <Compile Include="Report_Forms\frm_Category_Wise_Product_Report.Designer.cs">
       <DependentUpon>frm_Category_Wise_Product_Report.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report_Forms\frm_Date_Wise_Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Forms\frm_Date_Wise_Orders.Designer.cs">
+      <DependentUpon>frm_Date_Wise_Orders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report_Forms\frm_Montly_Stocks_Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -434,10 +445,14 @@
     <EmbeddedResource Include="Report_Forms\frm_Category_Wise_Product_Report.resx">
       <DependentUpon>frm_Category_Wise_Product_Report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report_Forms\frm_Date_Wise_Orders.resx">
+      <DependentUpon>frm_Date_Wise_Orders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report_Forms\frm_Montly_Stocks_Report.resx">
       <DependentUpon>frm_Montly_Stocks_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report_RDLC\Category_Wise_Product_RDLC.rdlc" />
+    <EmbeddedResource Include="Report_RDLC\Date_Wise_Order_RDLC.rdlc" />
     <EmbeddedResource Include="Report_RDLC\Montly_Stock.rdlc" />
     <EntityDeploy Include="EntityModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -453,6 +468,17 @@
     </None>
     <None Include="DataSets\Category_Wise_Product_DS.xss">
       <DependentUpon>Category_Wise_Product_DS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Date_Wise_Orders_DS.xsc">
+      <DependentUpon>Date_Wise_Orders_DS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\Date_Wise_Orders_DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Date_Wise_Orders_DS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\Date_Wise_Orders_DS.xss">
+      <DependentUpon>Date_Wise_Orders_DS.xsd</DependentUpon>
     </None>
     <None Include="DataSets\Stock_DS.xsc">
       <DependentUpon>Stock_DS.xsd</DependentUpon>

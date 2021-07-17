@@ -73,6 +73,7 @@
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnl_Menu_List = new System.Windows.Forms.Panel();
             this.pnl_Sub_Report = new System.Windows.Forms.Panel();
+            this.btn_Category_Wise_Product_Report = new System.Windows.Forms.Button();
             this.btn_Monthly_Stock_Report = new System.Windows.Forms.Button();
             this.btn_Customer_Bill = new System.Windows.Forms.Button();
             this.btn_Report = new System.Windows.Forms.Button();
@@ -112,7 +113,7 @@
             this.btn_Accept_Order = new System.Windows.Forms.Button();
             this.btn_Order = new System.Windows.Forms.Button();
             this.pnl_Logo = new System.Windows.Forms.Panel();
-            this.btn_Category_Wise_Product_Report = new System.Windows.Forms.Button();
+            this.btn_Date_Wise_Orders_Report = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.pnl_Menu_List.SuspendLayout();
@@ -510,15 +511,32 @@
             // pnl_Sub_Report
             // 
             this.pnl_Sub_Report.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pnl_Sub_Report.Controls.Add(this.btn_Date_Wise_Orders_Report);
             this.pnl_Sub_Report.Controls.Add(this.btn_Category_Wise_Product_Report);
             this.pnl_Sub_Report.Controls.Add(this.btn_Monthly_Stock_Report);
             this.pnl_Sub_Report.Controls.Add(this.btn_Customer_Bill);
             this.pnl_Sub_Report.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Sub_Report.Location = new System.Drawing.Point(0, 1635);
             this.pnl_Sub_Report.Name = "pnl_Sub_Report";
-            this.pnl_Sub_Report.Size = new System.Drawing.Size(279, 168);
+            this.pnl_Sub_Report.Size = new System.Drawing.Size(279, 224);
             this.pnl_Sub_Report.TabIndex = 24;
             this.pnl_Sub_Report.Visible = false;
+            // 
+            // btn_Category_Wise_Product_Report
+            // 
+            this.btn_Category_Wise_Product_Report.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Category_Wise_Product_Report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Category_Wise_Product_Report.FlatAppearance.BorderSize = 0;
+            this.btn_Category_Wise_Product_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Category_Wise_Product_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Category_Wise_Product_Report.ForeColor = System.Drawing.Color.Black;
+            this.btn_Category_Wise_Product_Report.Location = new System.Drawing.Point(0, 90);
+            this.btn_Category_Wise_Product_Report.Name = "btn_Category_Wise_Product_Report";
+            this.btn_Category_Wise_Product_Report.Size = new System.Drawing.Size(279, 66);
+            this.btn_Category_Wise_Product_Report.TabIndex = 9;
+            this.btn_Category_Wise_Product_Report.Text = "Category Wise Product Report";
+            this.btn_Category_Wise_Product_Report.UseVisualStyleBackColor = false;
+            this.btn_Category_Wise_Product_Report.Click += new System.EventHandler(this.btn_Category_Wise_Product_Report_Click);
             // 
             // btn_Monthly_Stock_Report
             // 
@@ -1104,21 +1122,21 @@
             this.pnl_Logo.Size = new System.Drawing.Size(279, 138);
             this.pnl_Logo.TabIndex = 5;
             // 
-            // btn_Category_Wise_Product_Report
+            // btn_Date_Wise_Orders_Report
             // 
-            this.btn_Category_Wise_Product_Report.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Category_Wise_Product_Report.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Category_Wise_Product_Report.FlatAppearance.BorderSize = 0;
-            this.btn_Category_Wise_Product_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Category_Wise_Product_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Category_Wise_Product_Report.ForeColor = System.Drawing.Color.Black;
-            this.btn_Category_Wise_Product_Report.Location = new System.Drawing.Point(0, 90);
-            this.btn_Category_Wise_Product_Report.Name = "btn_Category_Wise_Product_Report";
-            this.btn_Category_Wise_Product_Report.Size = new System.Drawing.Size(279, 66);
-            this.btn_Category_Wise_Product_Report.TabIndex = 9;
-            this.btn_Category_Wise_Product_Report.Text = "Category Wise Product Report";
-            this.btn_Category_Wise_Product_Report.UseVisualStyleBackColor = false;
-            this.btn_Category_Wise_Product_Report.Click += new System.EventHandler(this.btn_Category_Wise_Product_Report_Click);
+            this.btn_Date_Wise_Orders_Report.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Date_Wise_Orders_Report.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Date_Wise_Orders_Report.FlatAppearance.BorderSize = 0;
+            this.btn_Date_Wise_Orders_Report.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Date_Wise_Orders_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Date_Wise_Orders_Report.ForeColor = System.Drawing.Color.Black;
+            this.btn_Date_Wise_Orders_Report.Location = new System.Drawing.Point(0, 156);
+            this.btn_Date_Wise_Orders_Report.Name = "btn_Date_Wise_Orders_Report";
+            this.btn_Date_Wise_Orders_Report.Size = new System.Drawing.Size(279, 66);
+            this.btn_Date_Wise_Orders_Report.TabIndex = 10;
+            this.btn_Date_Wise_Orders_Report.Text = "Date Wise Orders Report";
+            this.btn_Date_Wise_Orders_Report.UseVisualStyleBackColor = false;
+            this.btn_Date_Wise_Orders_Report.Click += new System.EventHandler(this.btn_Date_Wise_Orders_Report_Click);
             // 
             // frm_MDI_Main_Form
             // 
@@ -1241,6 +1259,7 @@
         private System.Windows.Forms.Button btn_Add_New_Customer;
         private System.Windows.Forms.Button btn_Customer;
         private System.Windows.Forms.Button btn_Category_Wise_Product_Report;
+        private System.Windows.Forms.Button btn_Date_Wise_Orders_Report;
     }
 }
 

@@ -198,6 +198,7 @@
             this.tb_GST.Name = "tb_GST";
             this.tb_GST.Size = new System.Drawing.Size(330, 39);
             this.tb_GST.TabIndex = 31;
+            this.tb_GST.TextChanged += new System.EventHandler(this.tb_GST_TextChanged);
             // 
             // dtp_Delivery_Date
             // 
